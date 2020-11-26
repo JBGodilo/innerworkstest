@@ -1,0 +1,22 @@
+<div style="margin-top: 70px;">
+    <h1>
+        Table Binding test
+    </h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th *ngFor="let column of userColumns" scope="col">{{column}} </th>
+                </tr>
+            </thead>
+            <tbody hover="true">
+                <tr mdbTableCol *ngFor="let user of users">
+                  <th scope="row">{{user.id}}</th>
+                  <td>{{user.firstname}}</td>
+                  <td>{{user.middlename}}</td>
+                  <td>{{user.lastname}}</td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</div>
